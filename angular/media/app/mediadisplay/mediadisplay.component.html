@@ -1,0 +1,22 @@
+<div>
+<table class="table">
+    <thead>
+      <th>sc no</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Tags</th>
+      <th>Filename</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mediaa of medias; let i = index">
+        <td>{{i+1}}</td>
+        
+        <td>{{mediaa.title}}</td>
+        <td>{{mediaa.description}}</td>
+        <td>{{mediaa.tags}}</td>
+        <td>{{mediaa.filename}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>

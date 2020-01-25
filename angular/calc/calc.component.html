@@ -1,0 +1,15 @@
+<title>Calculator</title>
+<h1>Calculator</h1>
+<div>
+     <label for="value1">Enter number</label>
+     <input type="text" id="val1" #val1>
+     <label for="value2">Enter number</label>
+     <input type="text" id="val2" #val2>
+     <input type="button" value="+" (click)="add(val1,val2)">
+     <input type="button" value="-" (click)="sub(val1,val2)">
+     <input type="button" value="*" (click)="mul(val1,val2)">
+     <input type="button" value="/" (click)="div(val1,val2)">
+     <input type="button" value="reset" (click)="reset()"><br><br>
+     <label for="result"></label>
+     <input type="text" id="res" #res>
+</div>
