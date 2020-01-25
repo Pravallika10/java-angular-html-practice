@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>calculator</title>
+        <script type="text/javascript">
+            function add()
+            {
+                var value1=Number(document.getElementById('val1').value);
+                var value2=Number(document.getElementById('val2').value);
+                var s=value1 + value2;
+                var k=document.getElementById('res');
+                k.value=s;
+            }
+            function sub()
+            {
+                var value1=Number(document.getElementById('val1').value);
+                var value2=Number(document.getElementById('val2').value);
+                var s=value1 - value2;
+                var k=document.getElementById('res');
+                k.value=s;
+            }
+            function mul()
+            {
+                var value1=Number(document.getElementById('val1').value);
+                var value2=Number(document.getElementById('val2').value);
+                var s=value1 * value2;
+                var k=document.getElementById('res');
+                k.value=s;
+            }
+            function div()
+            {
+                var value1=Number(document.getElementById('val1').value);
+                var value2=Number(document.getElementById('val2').value);
+                var s=value1 / value2;
+                var k=document.getElementById('res');
+                k.value=s;
+            }
+            var value1;
+            var value2;
+            if(value1=='null'||value2=='null')
+            {
+                alert("no value provided");
+            }
+            function reset()
+            {
+              document.getElementById('val1').value=" ";
+              document.getElementById('val2').value=" ";
+              document.getElementById('res').value=" ";
+            }
+        </script>
+     </head>
+     <body>    
+     value 1:<input type="text" id="val1" placeholder="Enter value1"><br><br>
+     value 2:<input type="text" id="val2" placeholder="Enter value2"><br><br>
+     <input type="button" value="+" onclick="add()">
+     <input type="button" value="-" onclick="sub()">
+     <input type="button" value="*" onclick="mul()">
+     <input type="button" value="/" onclick="div()">
+     <input type="button" value="reset" onclick="reset()"><br><br>
+     Result:<input type="text" id="res" value=" " readonly>
+     </body>
+</html>     
+     
