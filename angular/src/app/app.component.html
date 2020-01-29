@@ -2,4 +2,11 @@
 <menu></menu>
 <input type="search"  placeholder="Search here..." #srch/>
 <input type="button" value="Search" (click)="searchCall(srch)"/><br><br>
+<hr/>
+<div *ngIf="auth.isuserloggedin()" class="text-success">
+    <h3>Welcome {{auth.getuserdetails()}}</h3>
+</div>
+
+<hr />
+
 <router-outlet></router-outlet>

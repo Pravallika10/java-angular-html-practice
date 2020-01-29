@@ -1,0 +1,12 @@
+
+    <div class="bg-info" style="height: 500px;">
+        <div *ngIf="!authorised" class="text-danger">
+            <h3>{{errorMessage}}</h3>
+        </div>
+      <div class="form-group">
+        <input type="text" class="form-control" #txtlogin placeholder="Enter login id"><br><br>
+        <input type="password" class="form-control" #txtpass placeholder="Enter password"><br><br>
+        <input type="button" value="login" (click)="checklogin(txtlogin,txtpass)"><br><br>
+      </div>
+    </div>
+

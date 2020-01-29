@@ -10,6 +10,15 @@
   <li class="nav-item">
     <a class="nav-link btn-secondary" [routerLink]="['/upload']">upload</a>
   </li>
+    <li *ngIf="!auth.isuserloggedin()" class="nav-item">
+    <a class="nav-link btn-info" [routerLink]="['/login']">LOGIN</a>
+  </li>
+    <li *ngIf="auth.isuserloggedin()" class="nav-item">
+    <a class="nav-link btn-success" [routerLink]="['/product']">PRODUCTS</a>
+  </li>
+    <li *ngIf="auth.isuserloggedin()" class="nav-item">
+    <a class="nav-link btn-danger" [routerLink]="['/logout']">LOGOUT</a>
+  </li>
 </ul>
 
 <hr/>

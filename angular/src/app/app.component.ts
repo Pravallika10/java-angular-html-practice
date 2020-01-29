@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationserviceService } from './services/authenticationservice.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'routingexample';
-  constructor(private router : Router){
+  constructor(private router : Router, public auth:AuthenticationserviceService){
 
   }
    searchCall(srch : HTMLInputElement){
