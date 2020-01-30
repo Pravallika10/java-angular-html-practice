@@ -9,11 +9,11 @@ import { UploadComponent } from './upload/upload.component';
 import { MenuComponent } from './menu/menu.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { LoginComponent } from './login/login.component';
-import { ProductBaseComponent } from './product-base/product-base.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductEntryComponent } from './product-entry/product-entry.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ErrorComponent } from './error/error.component';
+import { ProductAddComponent } from './product/product-add/product-add.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,15 +24,16 @@ import { ErrorComponent } from './error/error.component';
     MenuComponent,
     SearchResultComponent,
     LoginComponent,
-    ProductBaseComponent,
     ProductListComponent,
-    ProductEntryComponent,
     LogoutComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
