@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>welcome to spring mvc</h1>
-<!--  <hr/>   <a href="employee/dashboard">Employee Dashboard</a> -->
+<h1>Welcome to Student Dashboard</h1>
 <hr/>
-<a href="student/dashboard">Student Dashboard</a>
+<a href="profile">Manage Profile</a>
 </body>
 </html>
